@@ -1,0 +1,23 @@
+h2 {
+    color: cornflowerblue;
+}
+.some-class {
+    color: #000099;
+}
+#some-id {
+    color: green;
+}
+ul li span {
+    color: darkorange;
+}
+p {
+    color: brown;
+}
+ul li div {
+    color: crimson;
+}
+li {color: lawngreen;
+}
+:lang(uk) {
+    color: lightgreen;
+}
