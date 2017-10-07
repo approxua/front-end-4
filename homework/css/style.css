@@ -1,0 +1,31 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+    line-height: 1.5;
+    max-width: 825px;
+}
+
+div {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+    -webkit-margin-after: 50px;
+}
+.some-class {
+    font-size: 24px;
+    color: #000;;
+    font-weight: 400;
+    -webkit-margin-after: 0px;
+}
+a {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+}
+p {
+    font-size: 15px;
+    color: #333333;
+    word-wrap: break-word;
+    -webkit-margin-before: 30px;
+    -webkit-margin-after: 30px;
+}
