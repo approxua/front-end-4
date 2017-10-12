@@ -8,7 +8,6 @@
   - `inline-block`
   - `table-row`
   - `table-cell`
-  - `run-in`
 1. `width`
 1. `height`
 1. `margin`
@@ -26,7 +25,6 @@
   - `relative`
   - `absolute`
   - `fixed`
-  - `sticky`
 1. `float`
 1. `clear`
 
@@ -46,3 +44,4 @@
 - [CSS позиционирование](http://html5book.ru/css-position/)
 - [Как работает автоматическое позиционирование в CSS?](http://frontender.info/how-does-auto-positioning-work-in-css/)
 - [Магические числа в CSS](http://frontender.info/magic-numbers-in-css/)
+- [Generator vertical rhythm](https://www.gridlover.net/try)
