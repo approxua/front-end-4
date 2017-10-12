@@ -2,26 +2,28 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 1170px;
     height: 200px;
-    background-color:#232323;
+
 }
 header {
-    background-color: #2b2b2b;
-    padding: 20px 0;
+    background-color:#232323;
     font-weight: 300;
     position: relative;
+}
+.head {
+    background-color: #2b2b2b;
+    padding: 20px 0;
 }
 span {
     color: #3b3b3b;
     font-size: 12px;
     position: absolute;
     top: 12px;
-    right: 100px;
+    right: 75px;
 }
 .some-span {
     color: #7f7f7f;
     font-size: 14px;
     left: 0;
-
 }
 .register {
     color: #666666;
@@ -29,59 +31,87 @@ span {
     font-size: 14px;
     position: absolute;
     top: 10px;
-    right: 35px;
+    right: 10px;
 }
 #main {
-    right: 120px;
+    right: 95px;
 }
 div {
     padding: 30px 0;
-    width: 100%;
     position: relative ;
 }
 
 input {
-    background-color: #232323;
-    background-repeat: no-repeat;
+    background-color:inherit;
     border: none;
+    color: #545454;
 }
-.some-input {
-    width: 20px;
-    outline: none;
+.search {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    height: 18px;
+}
+form {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
 
 }
-p {
-    display: inline-block;
-    position: absolute;
-    line-height: 1px;
+.border {
+    text-align: center;
+    border: 1px solid #323232;
     top: 10px;
-    right: 0;
     width: 250px;
-    border: 10px;
-    border-color: #7f7f7f;
+    margin: 20px 0;
+    padding: 10px;
 }
-tr {
+ul {
     position: absolute;
     display: inline-block;
-    width: 1170px;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
 }
-td {
+li {
     display:inline-block;
-    width: 100px;
     font-size: 16px;
     text-align: center;
+    width: 97.5px;
+    float: left;
 }
-.home {
-    color: #be926f;
-}
-.left-home {
-    text-align: left;
-}
-.bag {
-    width: 500px;
-    text-align: right;
+.clear:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 a {
     text-decoration: none;
     color: #ffffff;
+}
+li a:hover {
+    color: #be926f;
+}
+li:first-child {
+    text-align: start;
+}
+.bag {
+    background-color:inherit ;
+    padding: 10px;
+    border: 0;
+}
+.bag:before {
+    content: '2';
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    height: 18px;
+    width: 18px;
+    top: 3px;
+    right: 0;
+    border-radius: 10px;
+    background-color:#be926f; ;
 }
