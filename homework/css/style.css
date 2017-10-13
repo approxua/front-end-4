@@ -1,0 +1,44 @@
+
+body {
+    counter-reset: counter;
+    width: 930px ;
+}
+.counter {
+    position: relative;
+    width: 50px;
+    counter-increment: counter;
+}
+.counter:nth-child(odd) {
+    background-color: #cc4242;
+}
+.counter:nth-child(even) {
+    background-color: #fe5353;
+}
+.counter:before {
+    content: counter(counter);
+    font-size: 24px;
+    color: #ffffff;
+    width: 50px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    font-family: Arial sans-serif;
+    line-height: 18px;
+    padding: 10px 10px 10px 0;
+    margin-left: 50px ;
+    width: 870px;
+}
+.text1 {
+    font-family: Arial sans-serif;
+    line-height: 18px;
+    padding: 10px 10px 10px 0;
+    margin-left: 50px ;
+    width: 870px;
+    background-color: #cccccc;
+}
+.text div:nth-child(even) {
+    background-color: #cccccc;
+}
