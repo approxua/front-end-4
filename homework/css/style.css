@@ -3,6 +3,9 @@ body {
     counter-reset: counter;
     width: 930px ;
 }
+section {
+    counter-reset: counte;
+}
 .counter {
     position: relative;
     width: 50px;
@@ -19,9 +22,12 @@ body {
     font-size: 24px;
     color: #ffffff;
     width: 50px;
+    height: 100%;
     float: left;
-    position: relative;
-    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
@@ -31,6 +37,10 @@ body {
     margin-left: 50px ;
     width: 870px;
 }
+.text:after  {
+    counter-increment: counte;
+    content: counter(counte);
+}
 .text1 {
     font-family: Arial sans-serif;
     line-height: 18px;
@@ -39,6 +49,6 @@ body {
     width: 870px;
     background-color: #cccccc;
 }
-.text div:nth-child(even) {
-    background-color: #cccccc;
+.text div:nth-child() {
+    background-color: #cccccc   ;
 }
