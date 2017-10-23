@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
 <body>
-<header>
-  <div class="head">
-  <span class="some-span">(+123) 456 789</span> <a href="#" class="register" id="main"> Log in </a> <span>or </span> <a class="register" href="#">Register </a>
-  </div>
-<div class="logo"> <img src="images/Logo.png" alt="Logo">
-  <form class="border" action="#"> <input type="search" placeholder="Search Products...">
-        <button class="search" type="submit"><img src="images/Search.png" height="18" alt="Search"> </button>
-  </form>
-</div>
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Living room</a></li>
-    <li><a href="#">Office</a></li>
-    <li><a href="#">Bedroom</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
-<form action="#">
-    <button class="bag" type="submit"> <img src="images/Bag.png" alt="Bag"> </button>
-</form>
-<div class="clear"></div>
 
+<!-- Begin Header -->
+<header class="header">
+    <div class="phone">
+        <div class="phone-wrapper">
+            <a href="#" class="tel">(+123) 456 789</a>
+            <div class="login">
+                <a href="#"> Log in </a> <span> or </span> <a href="#"> Register </a>
+            </div>
+        </div>
+    </div>
+    <div class="user">
+
+
+        <div class="middle"><a href="#"><img src="images/Logo.png" alt="Logo"></a>
+            <form class="search" action="#"><input type="search" placeholder="Search Products...">
+                <a href="#"><img src="images/Search.png" alt="Search"></a>
+            </form>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Living room</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Bedroom</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="bag">
+            <a href="#"><img src="images/Bag.png" alt="Bag"></a>
+        </div>
+        <div class="clear"></div>
+    </div>
 </header>
+<!-- End Header -->
 
 </body>
 </html>
