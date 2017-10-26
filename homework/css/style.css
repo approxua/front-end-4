@@ -1,54 +1,38 @@
 
 body {
-    counter-reset: counter;
     width: 930px ;
 }
-section {
-    counter-reset: counte;
+ul {
+    counter-reset: counter;
+    list-style: none;
+    padding: 0;
 }
 .counter {
-    position: relative;
-    width: 50px;
     counter-increment: counter;
+    font-family: Arial sans-serif;
+    line-height: 18px;
+    padding: 10px 0 10px 52px;
+    position:relative ;
 }
 .counter:nth-child(odd) {
-    background-color: #cc4242;
-}
-.counter:nth-child(even) {
-    background-color: #fe5353;
+    background-color: #ccc   ;
 }
 .counter:before {
     content: counter(counter);
-    font-size: 24px;
-    color: #ffffff;
-    width: 50px;
-    height: 100%;
-    float: left;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.counter:nth-child(odd):before {
+    background-color: #cc4242;
+}
+.counter:nth-child(even):before {
+    background-color: #fe5353;
 }
 
-.text {
-    font-family: Arial sans-serif;
-    line-height: 18px;
-    padding: 10px 10px 10px 0;
-    margin-left: 50px ;
-    width: 870px;
-}
-.text:after  {
-    counter-increment: counte;
-    content: counter(counte);
-}
-.text1 {
-    font-family: Arial sans-serif;
-    line-height: 18px;
-    padding: 10px 10px 10px 0;
-    margin-left: 50px ;
-    width: 870px;
-    background-color: #cccccc;
-}
-.text div:nth-child() {
-    background-color: #cccccc   ;
-}
