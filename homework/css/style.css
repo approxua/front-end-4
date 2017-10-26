@@ -1,0 +1,142 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    min-width: 320px;
+}
+.header {
+    background-color: #232323;
+}
+.user {
+    margin: 0 auto;
+    width: 1170px;
+}
+.phone {
+    background-color: #2b2b2b;
+    line-height: 1.85;
+    padding: 5px 0;
+}
+.phone-wrapper {
+    max-width: 1170px;
+    margin: 0 auto ;
+}
+.tel {
+    color: #7f7f7f;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.85;
+    text-decoration: none;
+}
+.login {
+    float: right;
+}
+.login a {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.login span {
+    color: #3b3b3b;
+    font-size: 12px;
+    margin: 0 10px;
+    line-height: 1.85;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+.middle {
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 1170px;
+}
+input,
+button {
+    outline: none;
+}
+input {
+    background-color: inherit;
+    border: none;
+}
+.search {
+    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 1.85;
+    color: #545454;
+}
+.header-search {
+    border: 1px solid #323232;
+    float: right;
+}
+.search,
+.search-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+.search-icon {
+    background:transparent url('../images/Search.png') center center no-repeat;
+    padding: 0;
+    width: 54px;
+    height: 44px;
+    border: none;
+}
+.menu ul {
+    display: inline-block;
+    padding: 0;
+    background-color: inherit;
+}
+.menu li {
+    display:inline-block;
+    font-size: 16px;
+    float: left;
+    margin-left: -50px;
+}
+.menu li+li {
+    margin-left: 30px;
+}
+@media all  {
+
+}
+.clear::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+.menu a:hover {
+    color: #be926f;
+}
+.active a {
+    color: #be926f;
+}
+.bag {
+    background: url("../images/Bag.png")center center no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 22px;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: right;
+    position: relative;
+}
+.bag:after {
+    content: '2';
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #232323;
+    line-height: 18px;
+    text-align: center;
+    position: absolute;
+    bottom: 21px;
+    left: 19px;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    background-color:#be926f; ;
+}
+
