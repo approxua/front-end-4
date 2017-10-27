@@ -9,7 +9,7 @@ body {
 }
 .user {
     margin: 0 auto;
-    width: 1170px;
+    max-width: 1170px;
 }
 .phone {
     background-color: #2b2b2b;
@@ -48,7 +48,6 @@ body {
 .middle {
     padding: 30px 0;
     margin: 0 auto;
-    width: 1170px;
 }
 input,
 button {
@@ -80,39 +79,20 @@ input {
     height: 44px;
     border: none;
 }
-.menu ul {
-    display: inline-block;
+.menu  ul {
     padding: 0;
-    background-color: inherit;
 }
 .menu li {
-    display:inline-block;
-    font-size: 16px;
-    float: left;
-    margin-left: -50px;
-}
-.menu li+li {
-    margin-left: 30px;
-}
-@media all  {
-
-}
-.clear::after {
-    content: '';
-    display: table;
-    clear: both;
+    list-style: none;
 }
 .menu a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px;
-}
-.menu a:hover {
-    color: #be926f;
-}
-.active a {
-    color: #be926f;
-}
+     text-decoration: none;
+     color: #ffffff;
+     padding: 10px;
+     font-size: 16px;
+     display: block;
+     width: 90%;
+ }
 .bag {
     background: url("../images/Bag.png")center center no-repeat;
     display: inline-block;
@@ -121,7 +101,40 @@ input {
     padding: 10px;
     margin-bottom: 10px;
     float: right;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+@media (min-width: 720px) {
+    .menu li {
+        display:inline-block;
+        margin-left: -10px;
+    }
+    .menu li+li {
+        margin-left: 30px;
+    }
+    .menu a {
+        display: inline-block;
+        width: 100%;
+    }
+    .bag {
+        position: relative;
+        bottom: -10px;
+    }
+}
+.clear::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu-wrapper {
     position: relative;
+}
+.menu a:hover {
+    color: #be926f;
+}
+.active a {
+    color: #be926f;
 }
 .bag:after {
     content: '2';
@@ -139,4 +152,32 @@ input {
     border-radius: 100%;
     background-color:#be926f; ;
 }
-
+@media (max-width: 480px) {
+    .phone-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .login {
+        float: none;
+    }
+    .middle {
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .header-search {
+        display: block;
+        text-align: center;
+        float: none;
+        width: 273px;
+        margin: 20px auto;
+    }
+    .bag {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+    }
+    .menu a {
+        display: block;
+        width: 80%
+    }
+}
