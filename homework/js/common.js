@@ -25,11 +25,13 @@ function findPow(a, b) {
             a = a * m;
         }
         console.log('Число', m,'в степені', b, '=', a);
-    } else if(a >= 0 && b !== 0) {
+    } else if(a === 0) {
+        console.log('Число 0 до степіня не підноситься')
+    } else if(a > 0 && b !== 0) {
         var b = 2;
         var m = a * a;
         console.log('Число', a,'в степені 2 =', m );
     } else {
-        console.log ('Число', a,'в степені', a, '=', 0);
+        console.log ('Число', a,'в степені', b, '=', 1);
     }
 }
