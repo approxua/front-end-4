@@ -3,35 +3,43 @@ console.log('---- Список функцій: ----');
 console.log('---- 1)findMin ---- ( Вираховує яке з вказаних чисел менше )');
 console.log('---- 2)findAr ---- ( Вираховує середнє арифметичне )');
 console.log('---- 3)findPow ---- ( Підносить до степіня)');
+var min;
+var ar;
+var pow;
 function findMin(a, b) {
-    if (a === b) {
-        console.log('числа рівні, спробуйте ще раз :)');
-    } else if (a > b) {
-        console.log('меньшим числом являється =', b);
+    if (arguments.length) {
+    if (a >= b) {
+        return min = b ;
     } else {
-        console.log('меньшим числом являється =', a);
+        return min = a;
     }
+} else {
+    console.log('Введіть значення для перевірки')}
 }
 function findAr(a, b) {
-    a = (a + b) / 2;
-    console.log('Середнє арифметичне =', a);
+    if (arguments.length) {
+        ar = (a + b) / 2;
+        return ar;
+    } else {
+        console.log('Введіть значення для перевірки')}
 }
 function findPow(a, b) {
-    if (a && b > 0) {
-        var i;
-        var s;
-        var m = a;
-        for( i = 1; i < b; i++ ) {
-            a = a * m;
+    if (arguments.length) {
+        if (a && b > 0) {
+            var i;
+            pow = a;
+            for (i = 1; i < b; i++) {
+                a = a * pow;
+            }
+            return pow = a;
+        } else if (a === 0) {
+            console.log('Число 0 до степіня не підноситься')
+        } else if (a > 0 && b !== 0) {
+            pow = a * a;
+            return pow;
+        } else {
+            return pow = 1;
         }
-        console.log('Число', m,'в степені', b, '=', a);
-    } else if(a === 0) {
-        console.log('Число 0 до степіня не підноситься')
-    } else if(a > 0 && b !== 0) {
-        var b = 2;
-        var m = a * a;
-        console.log('Число', a,'в степені 2 =', m );
     } else {
-        console.log ('Число', a,'в степені', b, '=', 1);
-    }
+        console.log('Введіть значення')}
 }
