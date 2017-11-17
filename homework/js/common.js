@@ -28,11 +28,12 @@ var codeObj = {
 function codeSum(array) {
     codeObj.length[23] = 90;
     var sumData = 0;
-    for (var i = 0; i <= array.length - 1; i++) {
+    for (var i in array) {
         if (typeof array[i] === 'number')
             sumData += array[i];
     }
     return sumData;
+
 }
 // codeSum(codeObj.length);
 
