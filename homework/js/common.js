@@ -19,28 +19,22 @@ function sumData(array) {
     }
 }
 
+
 //#2
-/* Спробував зробити через обєкт, всрав цілу купу часу, нічого не вийшло
 var codeObj = {
     'length': [45, 109, 32, 39, 1, 0]
 };
 
-function codeSum(codeObj) {
+function codeSum(array) {
     codeObj.length[23] = 90;
     var sumData = 0;
-    for (var key in codeObj.length) {
-        sumData += codeObj[key]
+    for (var i = 0; i <= array.length - 1; i++) {
+        if (typeof array[i] === 'number')
+            sumData += array[i];
     }
     return sumData;
 }
-*/
-var codeObj = [45, 109, 32, 39, 1, 0];
-
-function codeSum(codeObj) {
-    codeObj.length = 23;
-    codeObj.push(90);
-    return sumData(codeObj);
-}
+// codeSum(codeObj.length);
 
 //#3
 
