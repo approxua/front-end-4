@@ -1,48 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="" xmlns="" xmlns="">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
-    <div class="header-top">
-        <div class="container">
-            <a href="tel:+123456789" class="header-tel"> (+123) 456 789 </a>
-            <div class="header-login">
-                <a href="#"> Log in </a> <span> or </span> <a href="#"> Register </a>
+    <div class="header-top-wrapper">
+        <div class="header-top">
+            <div class="header-logo-wrapper">
+                <a href="#" class="header-logo">
+                    sarajevo<span>.</span>
+                </a>
+                <span class="header-logo-tab"> | </span>
+                <span class="header-logo-point">
+                I’am your tag line
+                </span>
             </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#1">Home</a></li>
+                    <li><a href="#2">Features</a></li>
+                    <li><a href="#3">Works</a></li>
+                    <li><a href="#4">Team</a></li>
+                    <li><a href="#5">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
     <div class="header-middle">
-        <a href="#" class="header-logo">
-            <img src="images/Logo.png" alt="Logo">
-        </a>
-        <form action="" class="header-form">
-            <input type="search" class="header-search" placeholder="Search Products...">
-            <button class="header-search-button"></button>
-        </form>
-    </div>
-    <div class="header-menu">
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Living room</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Bedroom</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="bag"></a>
+        <div id="1" class="header-logo big-logo">
+            sarajevo<span>.</span>
+        </div>
+        <div class="header-title">
+            <h1><span>/creative&nbsp;</span>one page template.</h1>
+            <p><span>&mdash;</span>We are a team of professionals<span>&mdash;</span></p>
+        </div>
     </div>
 </header>
+<div class="page-wrapper">
+    <div class="features-content">
+        <div class="container">
+        <h2 id="2" class="main-title">Features</h2>
+        <div class="row">
+            <div class="col-xs-4 branding">
+                <h3 class="features-big-title">
+                    Branding
+                </h3>
+                <p class="features-title-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+            </div>
+            <div class="col-xs-4 development">
+                <h3 class="features-big-title">
+                    Development
+                </h3>
+                <p class="features-title-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+            </div>
+            <div class="col-xs-4 consulting">
+                <h3 class="features-big-title">
+                    Consulting
+                </h3>
+                <p class="features-title-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
