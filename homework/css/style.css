@@ -350,10 +350,14 @@ header {
     margin: 0 auto;
 }
 
-.slider-team {
+.slider-team li {
     margin: 50px 0;
-    height: 470px;
-    background-color: #3d3a3d;
+    height: 249px;
+    width: 224px;
+}
+.slider-team li a {
+    height: 249px;
+    width: 224px;
 }
 
 .facts-content {
@@ -399,6 +403,7 @@ header {
     font-size: .84rem;
     color: #f4f5f5;
 }
+
 .contact-title {
     font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.25rem;
