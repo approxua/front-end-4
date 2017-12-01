@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="icomoon/icomoon.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -55,10 +57,8 @@
             <h1>
                 <span>/creative&nbsp;</span>one page template.
             </h1>
-            <p>
-                <span>&mdash;</span>
+            <p class="line">
                 We are a team of professionals
-                <span>&mdash;</span>
             </p>
             <div class="header-contact">
                 <a href="#" class="icon-twitter"></a>
@@ -76,7 +76,9 @@
                 <h2 id="2" class="main-title">
                     Features
                 </h2>
-                <a href="#" class="icon-heart"></a>
+                <div class="heart-container">
+                    <a href="#" class="icon-heart"></a>
+                </div>
                 <div class="features-info-body">
                     <div class="sprite sprite-features-1">
                         <h3 class="features-title">
@@ -216,6 +218,7 @@
             </ul>
         </nav>
     </div>
+    <div class="container"></div>
     <div class="works-exemple">
         <ul>
             <li>
@@ -252,7 +255,18 @@
             doloremque
             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
         </h3>
-        <div class="slider-team"></div>
+        <div class="slider-team">
+            <div class="main-slider">
+                <div><a class="slide-1" href="#" style="background: url(images/John.jpg) no-repeat">John Filmr Doe </a>
+                </div>
+                <div><a class="slide-2" href="#" style="background: url(images/Chystine.jpg) no-repeat">Chystine
+                    Hineu</a></div>
+                <div><a class="slide-3" href="#" style="background: url(images/Martin.jpg) no-repeat">Martin Matrone</a>
+                </div>
+                <div><a class="slide-4" href="#" style="background: url(images/Steve.jpg) no-repeat">Steve Flaulkin</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="facts-content">
         <div class="facts-wrapper">
@@ -300,7 +314,7 @@
     </div>
     <div class="contact-content">
         <div class="container">
-            <h2 id="5" class="main-title">Meet Our Team</h2>
+            <h2 id="5" class="main-title">Let’s Discuss</h2>
             <a href="#" class="icon-heart"></a>
             <div class="contact-title">
                 Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -327,9 +341,9 @@
                         <input type="text" placeholder="Name">
                         <input type="text" placeholder="Email">
                         <div class="big-input">
-                        <input class="big-input" type="text" placeholder="Message">
+                            <input class="big-input" type="text" placeholder="Message">
 
-                        <a href="#" class="massage icon-Envelope">Send message</a>
+                            <a href="#" class="massage icon-Envelope">Send message</a>
                     </form>
                 </div>
                 <div class="contact-box-icon">
@@ -342,20 +356,38 @@
             </div>
         </div>
     </div>
-    <div id="map" class="container" style="width:1170px;height:185px;background:yellow"></div>
-
+    <div id="map" class="container" style="width:1170px;height:185px;"></div>
 </div>
-</div>
-<script>
-    function myMap() {
-        var mapOptions = {
-            center: new google.maps.LatLng(51.5, -0.12),
-            zoom: 1,
-            mapTypeId: google.maps.MapTypeId.HYBRID
-        }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<footer>
+    <div class="container">
+        <div class="footer-body">
+            <div class="footer-box">
+                <a href="#1" class="footer-box-logo">sarajevo<span>.</span></a>
+                <div class="footer-box-content">eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </div>
+            </div>
+            <div class="footer-box-sub">
+                <div class="footer-box-title">Subscribe</div>
+                <form class="footer-box-form">
+                    <input type="text">
+                    <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </form>
+            </div>
+            <div class="footer-explore">
+                <div class="footer-box-title">Explore</div>
+                <div class="footer-box-explore">
+                    <div class="explore-first">Envato <br>  Themecurve <br> Kreativeshowcase <br> Freebiescurve</div>
+                    <div>Themeforest <br> Microsoft <br> Google <br> Yahoo</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI0rLzCO1YkJM-ATNK5daRC7ZVCyYO2ps&callback=myMap"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
