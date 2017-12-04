@@ -10,9 +10,9 @@ myMap();
 $(function () {
     $('.main-slider').slick({
         infinite: true,
-        slidesToShow:3,
+        slidesToShow:4,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 1000
     });
 });
 

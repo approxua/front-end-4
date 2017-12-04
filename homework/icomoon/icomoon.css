@@ -48,7 +48,6 @@
 }
 .icon-heart:before {
   content: "\e90a";
-  z-index: 2;
 }
 .icon-man:before {
   content: "\e90b";
