@@ -345,12 +345,13 @@ header {
     padding: 5px 15px;
     color: #062033;
     text-decoration: none;
+    border: solid 1px white;
 }
 
 .works-nav a:hover {
     color: white;
     background-color: #4c76ff;
-    border: solid 1px #4c76ff;
+    border-color: #4c76ff;
     border-radius: 5px;
 }
 
