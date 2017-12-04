@@ -131,22 +131,24 @@ header {
 
 .line:before {
     position: absolute;
-    left: -68px;
-    top: 10px;
+    right: 100%;
+    top: 50%;
     content: '';
     width: 28px;
     display: block;
     border-bottom: solid 1px #4c76ff;
+    margin: 0 30px;
 }
 
 .line:after {
     position: absolute;
-    left: 268px;
-    top: 10px;
+    left: 100%;
+    top: 50%;
     content: '';
     width: 28px;
     display: block;
     border-bottom: solid 1px #4c76ff;
+    margin: 0 30px;
 }
 
 .features-content {
