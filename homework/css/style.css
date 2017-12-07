@@ -606,6 +606,7 @@ header {
 }
 
 .contact-box-form input {
+    outline: none;
     width: 310px;
     padding: 20px 0;
     border: none;
@@ -628,6 +629,7 @@ header {
     padding: 20px 0;
     height: 54px;
     resize: none;
+    outline: none;
     overflow: hidden;
     width: 100%;
     border: none;
@@ -743,6 +745,7 @@ footer {
     padding: 0 10px;
     width: 200px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .footer-box-form button {
