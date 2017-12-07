@@ -1,3 +1,4 @@
+
 function myMap() {
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
@@ -12,7 +13,15 @@ $(function () {
         infinite: true,
         slidesToShow:4,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 1000,
+        arrows:false
     });
-});
 
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top-70;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+
+});

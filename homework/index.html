@@ -9,8 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="icomoon/icomoon.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="fonts/icomoon.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,7 +27,7 @@
                 I’am your tag line
                 </span>
       </div>
-      <nav class="header-nav">
+      <nav id="menu" class="header-nav">
         <ul>
           <li>
             <a href="#1">Home</a>
@@ -78,7 +77,7 @@
         </h2>
 
         <div class="features-info-body">
-          <div class="sprite sprite-features-1">
+          <div class="features-icon icon-star">
             <h3 class="features-title">
               Branding
             </h3>
@@ -87,7 +86,7 @@
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
             </p>
           </div>
-          <div class="sprite sprite-features-2">
+          <div class="features-icon icon-pencil">
             <h3 class="features-title">
               Development
             </h3>
@@ -96,7 +95,7 @@
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
             </p>
           </div>
-          <div class="sprite sprite-features-3">
+          <div class="features-icon icon-bullhorn">
             <h3 class="features-title">
               Consulting
             </h3>
@@ -220,28 +219,68 @@
   <div class="works-exemple">
     <ul>
       <li>
-        <a href="#" style=" background: url(images/Layer1.jpg)"></a>
+        <img src="images/Layer1.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer2.jpg)"></a>
+        <img src="images/Layer2.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer3.jpg)"></a>
+        <img src="images/Layer3.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer4.jpg)"></a>
+        <img src="images/Layer4.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer5.jpg)"></a>
+        <img src="images/Layer5.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer6.jpg)"></a>
+        <img src="images/Layer6.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer7.jpg)"></a>
+        <img src="images/Layer7.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
       <li>
-        <a href="#" style=" background: url(images/Layer8.jpg)"></a>
+        <img src="images/Layer8.jpg" alt="photo">
+        <a href="#" class="works-exemple-info">
+          <i class="icon-eye"></i>
+          <span class="works-exemple-title">Labore et dolore magnam</span>
+          <span class="works-exemple-content">Photography</span>
+        </a>
       </li>
     </ul>
   </div>
@@ -467,7 +506,6 @@
       <h2 id="5" class="main-title">Let’s Discuss <br>
         <i class="icon-heart"></i>
       </h2>
-
       <div class="contact-title">
         Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
         ab illo inventore
@@ -490,12 +528,10 @@
             <div class="contact-box-form-title">
               Say hello!
             </div>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <div class="big-input">
-              <input class="big-input" type="text" placeholder="Message">
-
-              <a href="#" class="massage icon-Envelope">Send message</a>
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <textarea type="text" name="massage" placeholder="Message"></textarea>
+            <button type="submit" class="massage icon-Envelope">Send message</button>
           </form>
         </div>
         <div class="contact-box-icon">
@@ -508,7 +544,7 @@
       </div>
     </div>
   </div>
-  <div id="map"  style=" height:185px;"></div>
+  <div id="map" style=" height:185px;"></div>
 </div>
 <footer>
   <div class="container">
@@ -522,10 +558,13 @@
       </div>
       <div class="footer-box-sub">
         <div class="footer-box-title">Subscribe</div>
-        <form class="footer-box-form">
-          <input type="text">
+        <div class="footer-box-form-wrapper">
+          <form class="footer-box-form">
+            <input type="text" name="sub">
+            <button type="submit" class="icon-long-arrow"></button>
+          </form>
           <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </form>
+        </div>
       </div>
       <div class="footer-explore">
         <div class="footer-box-title">Explore</div>
@@ -537,8 +576,8 @@
     </div>
   </div>
 </footer>
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI0rLzCO1YkJM-ATNK5daRC7ZVCyYO2ps&callback=myMap"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI0rLzCO1YkJM-ATNK5daRC7ZVCyYO2ps&callback=myMap"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/common.js"></script>
