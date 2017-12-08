@@ -8,12 +8,21 @@ header {
     font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+#menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 56px;
+}
+
 .header-top-wrapper {
     background-color: rgba(16, 22, 54, 0.2);
+    text-align: center;
 }
 
 .header-top {
     max-width: 994px;
+    min-width: 320px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -23,6 +32,38 @@ header {
 
 .header-logo-wrapper {
     line-height: 60px;
+}
+
+@media (max-width: 720px) {
+    #menu {
+        height: 300px;
+    }
+    .header-top {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .header-logo-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        line-height: 40px;
+    }
+    .header-logo-tab {
+        display: none;
+    }
+    .header-nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .header-nav a {
+        display: block;
+    }
+    .header-nav a:hover {
+        color: #4c76ff;
+    }
+
 }
 
 .header-logo {
@@ -49,15 +90,21 @@ header {
     color: #354a5a;
     padding: 0 10px 0 15px;
 }
+
 .header-nav ul {
     display: flex;
     list-style: none;
     padding: 0 12px;
 }
-
-.header-nav li + li {
-    padding-left: 30px;
+@media (min-width: 721px) {
+    .header-nav li + li {
+        padding-left: 30px;
+    }
+    .header-nav a:hover {
+         border-top: solid 1px #4c76ff;
+    }
 }
+
 
 .header-nav a {
     padding: 15px 0;
@@ -68,14 +115,14 @@ header {
     color: white;
 }
 
-.header-nav a:hover {
-    border-top: solid 1px #4c76ff;
-}
-
 .header-middle {
-    padding: 0 15px;
+    padding: 280px 15px 0 15px;
     text-align: center;
-    margin-top: 230px;
+}
+@media (max-width: 720px) {
+    .header-middle {
+        padding-top: 320px;
+    }
 }
 
 .big-logo {
@@ -120,6 +167,7 @@ header {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 994px;
+    min-width: 320px;
 }
 
 .line {
@@ -338,6 +386,7 @@ header {
 .works-content {
     font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
     max-width: 994px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
@@ -440,14 +489,27 @@ header {
     text-align: center;
 }
 
+.slide img {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
 .slide:hover .team-info-box {
     display: flex;
 }
 
+.slide-wrapper {
+    width: 224px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .team-content {
     max-width: 994px;
+    min-width: 320px;
     margin: 0 auto;
-    padding: 85px 0;
+    padding: 85px 15px;
 }
 
 .main-slider {
@@ -488,6 +550,7 @@ header {
     padding: 20px;
     box-sizing: border-box;
     color: white;
+    z-index: 2;
 }
 
 .team-info-content {
