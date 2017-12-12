@@ -9,7 +9,7 @@ header {
 }
 
 #menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     height: 56px;
@@ -38,10 +38,17 @@ header {
 @media (max-width: 720px) {
     #menu {
         height: 300px;
+        position: fixed;
     }
+
+    .header-top-wrapper {
+        background-color: rgba(16, 22, 54, 0.7);
+    }
+
     .header-top {
         flex-direction: column-reverse;
         justify-content: flex-end;
+        padding: 0;
     }
 
     .header-logo-wrapper {
@@ -50,17 +57,21 @@ header {
         justify-content: flex-end;
         line-height: 40px;
     }
+
     .header-logo-tab {
         display: none;
     }
+
     .header-nav ul {
         flex-direction: column;
         padding: 0;
         margin: 0;
     }
+
     .header-nav a {
         display: block;
     }
+
     .header-nav a:hover {
         color: #4c76ff;
     }
@@ -95,17 +106,17 @@ header {
 .header-nav ul {
     display: flex;
     list-style: none;
-    padding: 0 12px;
 }
+
 @media (min-width: 721px) {
     .header-nav li + li {
         padding-left: 30px;
     }
+
     .header-nav a:hover {
-         border-top: solid 1px #4c76ff;
+        border-top: solid 1px #4c76ff;
     }
 }
-
 
 .header-nav a {
     padding: 15px 0;
@@ -117,18 +128,19 @@ header {
 }
 
 .header-middle {
-    padding: 280px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    height: 100%;
     text-align: center;
-}
-@media (max-width: 720px) {
-    .header-middle {
-        padding-top: 320px;
-    }
+    position: relative;
 }
 
 .big-logo {
     font-size: 3.875rem;
     letter-spacing: 0;
+    padding-bottom: 10px;
 }
 
 .header-title h1 {
@@ -149,8 +161,30 @@ header {
     color: #ededec;
 }
 
+@media (max-width: 720px) {
+    .big-logo {
+        font-size: 2.875rem;
+    }
+
+    .header-title h1 {
+        font-size: 2rem;
+    }
+
+    .header-title span {
+        font-size: 2.3rem;
+    }
+
+    .header-title p {
+        font-size: .925rem;
+    }
+}
+
 .header-contact {
-    padding: 100px;
+    position: absolute;
+    padding: 20px;
+    top: 85%;
+    left: 50%;
+    margin-left: -81px;
 }
 
 .header-contact a {
@@ -168,7 +202,6 @@ header {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 994px;
-    min-width: 320px;
 }
 
 .line {
@@ -286,7 +319,6 @@ header {
 }
 
 .features-info-body {
-    display: flex;
     justify-content: space-between;
     padding: 60px 0;
 }
@@ -304,9 +336,19 @@ header {
     line-height: 1.63;
 }
 
+@media (min-width: 720px) {
+    .features-info-body {
+        display: flex;
+    }
+
+    .features-icon {
+        padding-left: 50px;
+    }
+}
+
 .features-icon {
     position: relative;
-    padding-left: 50px;
+    padding: 10px 50px;
 }
 
 .features-icon:nth-child(-n+2) {
@@ -331,15 +373,21 @@ header {
     margin: 80px 80px 60px 80px;
 }
 
-.features-iphone-body {
-    display: flex;
+.box-iphone {
+    background: url('../images/Iphone.png') center center no-repeat;
+    width: 100%;
+    height: 608px;
 }
 
-.box-iphone {
-    background: url('../images/Iphone.png') center center;
-    width: 350px;
-    height: 608px;
-    padding: 0 20px;
+@media (min-width: 720px) {
+    .features-iphone-body {
+        display: flex;
+    }
+
+    .box-iphone {
+        width: 350px;
+        padding: 0 20px;
+    }
 }
 
 .box-wrapper {
@@ -423,7 +471,10 @@ header {
     border-color: #4c76ff;
     border-radius: 5px;
 }
-
+.works-exemple {
+    max-width: 1185px;
+    margin: 0 auto;
+}
 .works-exemple ul {
     list-style: none;
     display: flex;
@@ -431,10 +482,8 @@ header {
     padding: 0;
 }
 
-.works-exemple {
-    margin: 0 auto;
-    min-width: 1176px;
-    max-width: 1176px;
+.works-exemple img {
+    width: 294px;
 }
 
 .works-exemple li {
@@ -627,6 +676,10 @@ header {
     color: #f4f5f5;
 }
 
+.contact-content {
+    margin-bottom: 50px;
+}
+
 .contact-title {
     font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.25rem;
@@ -640,13 +693,12 @@ header {
 .contact-body {
     font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
-    justify-content: space-between;
-    height: 300px;
+    justify-content: space-between;=
 }
 
 .contact-box-addres {
     line-height: 1.5;
-    width: 230px;
+    width: 20%;
 }
 
 .contact-box-title {
@@ -663,22 +715,25 @@ header {
 
 .contact-box-form {
     display: flex;
-    padding: 0 67px;
+    padding: 0 15px;
     font-size: .677rem;
     color: #c8cbce;
     line-height: 1.84;
+    width: 70%;
 }
-
+.contact-box-form form {
+    width: 100%;
+}
 .contact-box-form input {
     outline: none;
-    width: 310px;
+    width: 48%;
     padding: 20px 0;
     border: none;
     border-bottom: solid 2px #c2c5c9;
 }
 
 .contact-box-form input:nth-child(2) {
-    margin-right: 30px;
+    margin-right: 3%;
 }
 
 .contact-box-form-title {
@@ -743,7 +798,6 @@ footer {
 .footer-body {
     display: flex;
     padding: 50px 45px;
-    height: 150px;
 }
 
 .footer-box-logo {
