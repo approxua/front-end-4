@@ -4,15 +4,16 @@ html {
 
 header {
     background: transparent url('../images/header-theme.jpg') center center;
-    height: 701px;
+    height: 100vh;
     font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 56px;
+    z-index: 5;
 }
 
 .header-top-wrapper {
