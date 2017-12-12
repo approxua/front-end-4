@@ -23,7 +23,6 @@ header {
 
 .header-top {
     max-width: 994px;
-    min-width: 320px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -370,7 +369,7 @@ header {
     line-height: 2;
     color: #3d3a3d;
     text-align: center;
-    margin: 80px 80px 60px 80px;
+    margin: 80px 0;
 }
 
 .box-iphone {
@@ -386,7 +385,6 @@ header {
 
     .box-iphone {
         width: 350px;
-        padding: 0 20px;
     }
 }
 
@@ -435,7 +433,7 @@ header {
 .works-content {
     font-family: 'Lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
     max-width: 994px;
-    min-width: 320px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -445,15 +443,20 @@ header {
     line-height: 1.25;
     color: #384d5c;
     text-align: center;
-    margin: 40px 100px;
+    margin: 40px 0;
 }
 
 .works-nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 80px;
+}
+
+@media (min-width: 760px) {
+    .works-nav ul {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .works-nav a {
@@ -464,7 +467,13 @@ header {
     text-decoration: none;
     border: solid 1px white;
 }
-
+@media (max-width: 760px) {
+    .works-nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+}
 .works-nav a:hover {
     color: white;
     background-color: #4c76ff;
@@ -557,7 +566,6 @@ header {
 
 .team-content {
     max-width: 994px;
-    min-width: 320px;
     margin: 0 auto;
     padding: 85px 15px;
 }
@@ -628,13 +636,11 @@ header {
 
 .facts-content {
     background: transparent url('../images/Layer29.jpg') center center;
-    height: 450px;
     margin-bottom: 70px;
 }
 
 .facts-wrapper {
     background-color: rgba(6, 32, 51, 0.8);
-    height: 450px;
 }
 
 .small {
@@ -645,9 +651,14 @@ header {
 .facts-body {
     color: #fbfbfc;
     font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    padding: 55px 85px 0 85px;
+    padding: 55px 85px;
+}
+
+@media (min-width: 680px) {
+    .facts-body {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .facts-box {
@@ -674,6 +685,24 @@ header {
     text-transform: uppercase;
     font-size: .84rem;
     color: #f4f5f5;
+}
+@media (max-width: 679px) {
+    .facts-box {
+        padding: 20px 0;
+    }
+    .facts-box:before {
+        padding: 15px;
+        font-size: 15px;
+        border: solid 1px #82898e;
+    }
+    .facts-box-title {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+    .facts-box-content {
+        font-size: .64rem;
+    }
 }
 
 .contact-content {

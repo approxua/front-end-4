@@ -47,7 +47,7 @@ $(function () {
 
 var menu = document.getElementById('menu');
 menu.onmousedown = function (e) {
-    if (window.innerWidth < 720) {
+    if (window.innerWidth < 721) {
         menu.style.transition = '0s';
         var curY = e.clientY;
         var top = menu.offsetTop;
