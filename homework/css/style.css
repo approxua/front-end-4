@@ -508,14 +508,15 @@ header {
         justify-content: center;
     }
 }
-    .works-exemple img {
-    width: 294px;
+.works-exemple img {
+    width: 100%;
+    height: 100%;
 }
 
 .works-exemple li {
     position: relative;
-    width: 294px;
-    height: 221px;
+    width: 25%;
+    height: auto;
 }
 
 .works-exemple a {
@@ -525,9 +526,10 @@ header {
     text-decoration: none;
     text-align: center;
     position: absolute;
-    width: 294px;
-    height: 221px;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(85, 125, 255, .95);
     padding: 20px;
     box-sizing: border-box;
@@ -652,7 +654,7 @@ header {
 }
 
 .facts-content {
-    background: transparent url('../images/Layer29.jpg') center center;
+    background: transparent url('../images/Layer29.jpg') center / cover;
     margin-bottom: 70px;
 }
 
