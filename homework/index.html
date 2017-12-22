@@ -31,19 +31,19 @@
       <nav id="nav" class="header-nav">
         <ul>
           <li>
-            <a href="#1">Home</a>
+            <a href="#menu-1">Home</a>
           </li>
           <li>
-            <a href="#2">Features</a>
+            <a href="#menu-2">Features</a>
           </li>
           <li>
-            <a href="#3">Works</a>
+            <a href="#menu-3">Works</a>
           </li>
           <li>
-            <a href="#4">Team</a>
+            <a href="#menu-4">Team</a>
           </li>
           <li>
-            <a href="#5">Contact</a>
+            <a href="#menu-5">Contact</a>
           </li>
         </ul>
       </nav>
@@ -52,7 +52,7 @@
   <!-- End Header-top -->
   <!-- Begin Header-middle -->
   <div class="header-middle">
-    <div id="1" class="header-logo big-logo">
+    <div id="menu-1" class="header-logo big-logo">
       sarajevo<span>.</span>
     </div>
     <div class="header-title">
@@ -78,7 +78,7 @@
   <div class="features-content">
     <div class="features-wrapper">
       <div class="container">
-        <h2 id="2" class="main-title first"> Features <br>
+        <h2 id="menu-2" class="main-title first"> Features <br>
           <i class="icon-heart .features"></i>
         </h2>
         <div class="features-info-body">
@@ -192,7 +192,7 @@
   <!-- Begin Works -->
   <div class="works-content">
     <div class="cntainer">
-      <h2 id="3" class="main-title "> works <br>
+      <h2 id="menu-3" class="main-title "> works <br>
         <i class="icon-heart"></i>
       </h2>
 
@@ -294,7 +294,7 @@
   <!-- End Works -->
   <!-- Begin Team -->
   <div class="team-content">
-    <h2 id="4" class="main-title">Meet Our Team <br>
+    <h2 id="menu-4" class="main-title">Meet Our Team <br>
       <i class="icon-heart"></i>
     </h2>
     <h3 class="works-title">
@@ -493,32 +493,32 @@
         </h2>
         <div class="facts-body">
           <div class="facts-box icon-Clock">
-            <div class="facts-box-title">
-              3200
+            <div id="hours" class="facts-box-title">
+              0
             </div>
             <div class="facts-box-content">
               Hours of Work
             </div>
           </div>
           <div class="facts-box icon-man">
-            <div class="facts-box-title">
-              120
+            <div id="clinets" class="facts-box-title">
+              0
             </div>
             <div class="facts-box-content">
               Satisfied Clinets
             </div>
           </div>
           <div class="facts-box icon-Rocket">
-            <div class="facts-box-title">
-              360
+            <div id="project" class="facts-box-title">
+              0
             </div>
             <div class="facts-box-content">
               Projects delivered
             </div>
           </div>
           <div class="facts-box icon-Cup">
-            <div class="facts-box-title">
-              42
+            <div id="awards" class="facts-box-title">
+              0
             </div>
             <div class="facts-box-content">
               Awards Won
@@ -532,7 +532,7 @@
   <!-- Begin Contact -->
   <div class="contact-content">
     <div class="container">
-      <h2 id="5" class="main-title">Let’s Discuss <br>
+      <h2 id="menu-5" class="main-title">Let’s Discuss <br>
         <i class="icon-heart"></i>
       </h2>
       <div class="contact-title">
@@ -553,13 +553,13 @@
           </div>
         </div>
         <div class="contact-box-form">
-          <form action="#">
+          <form action="#" class="contact-form">
             <div class="contact-box-form-title">
               Say hello!
             </div>
             <input type="text" name="name" placeholder="Name">
             <input type="text" name="email" placeholder="Email">
-            <textarea type="text" name="massage" placeholder="Message"></textarea>
+            <textarea name="massage" placeholder="Message"></textarea>
             <button type="submit" class="massage icon-Envelope">Send message</button>
           </form>
         </div>
@@ -620,6 +620,9 @@
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI0rLzCO1YkJM-ATNK5daRC7ZVCyYO2ps&callback=myMap"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/common.js"></script>
 </body>

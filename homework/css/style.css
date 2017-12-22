@@ -328,7 +328,7 @@ header {
 
 .features-info-body {
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .features-title {
@@ -347,6 +347,7 @@ header {
 @media (min-width: 720px) {
     .features-info-body {
         display: flex;
+        padding: 60px 0;
     }
 
     .features-icon {
@@ -714,6 +715,7 @@ header {
 .facts-body {
     color: #fbfbfc;
     font-size: 30px;
+    padding-bottom: 30px;
 }
 
 @media (min-width: 680px) {
@@ -824,6 +826,7 @@ header {
 
 .contact-box-form form {
     width: 100%;
+    position: relative;
 }
 
 .contact-box-form input {
@@ -891,13 +894,18 @@ header {
     font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: .834rem;
     line-height: 1.5;
-    padding: 20px 0;
+    margin: 15px 0;
+    padding: 5px;
     color: #262626;
-    border: none;
+    border: solid 1px white;
     background-color: inherit;
     float: right;
+    cursor: pointer;
 }
-
+.massage:hover {
+    border: solid 1px #527bff;
+    border-radius: 3px;
+}
 .massage:before {
     padding-right: 5px;
     font-size: .834rem;
@@ -907,6 +915,15 @@ header {
     color: #527bff;
 }
 
+label {
+    position: absolute;
+    left: 0;
+}
+
+#email-error {
+    left: 51%;
+    padding-left: 3px;
+}
 .contact-icon {
     display: flex;
     padding: 5px;
@@ -996,6 +1013,7 @@ footer {
     color: white;
     display: flex;
     box-sizing: border-box;
+    position: relative;
 }
 
 .footer-box-form input {
@@ -1006,6 +1024,10 @@ footer {
     padding: 0 10px;
     box-sizing: border-box;
     outline: none;
+}
+#sub-error {
+    padding: 0 5px;
+    top: -20px;
 }
 
 @media (min-width: 720px) {
@@ -1032,8 +1054,11 @@ footer {
     border: none;
     font-size: 24px;
     width: 15%;
+    cursor: pointer;
 }
-
+.footer-box-form button:hover {
+    opacity: .7;
+}
 .footer-box-form button:before {
     color: white;
 }

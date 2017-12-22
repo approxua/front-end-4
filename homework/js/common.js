@@ -1,14 +1,14 @@
-function myMap() {
-    var mapCanvas = document.getElementById("map");
-    var mapOptions = {
-        center: new google.maps.LatLng(49.42, 26.98),
-        zoom: 10
-    };
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-
-myMap();
 $(function () {
+    function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+            center: new google.maps.LatLng(49.42, 26.98),
+            zoom: 10
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+
+    myMap();
     $('.main-slider').slick({
         infinite: true,
         slidesToShow: 4,
@@ -43,6 +43,58 @@ $(function () {
         $('body,html').animate({scrollTop: top}, 1000);
     });
 
+    $('.contact-form').validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            massage: {
+                required: true
+            }
+        }
+    });
+    $('.footer-box-form').validate({
+        rules: {
+            sub: {
+                required: true,
+                email: true
+            }
+        }
+    });
+
+    var a = 0;
+    $(window).scroll(function () {
+
+        var oTop = $('.facts-body').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() >= oTop) {
+            $('#hours').animateNumber({
+                    number: 3200
+                },
+                1000
+            );
+            $('#clinets').animateNumber({
+                    number: 120
+                },
+                1000
+            );
+            $('#project').animateNumber({
+                    number: 360
+                },
+                1000
+            );
+            $('#awards').animateNumber({
+                    number: 42
+                },
+                1000
+            );
+            a = 1;
+        }
+
+    });
 });
 
 var menu = document.getElementById('menu');
